@@ -13,6 +13,33 @@ A production-ready, TypeScript-based Express 5 microservice providing zero-trust
 
 ---
 
+## Folder Structure
+```
+media-service/
+├── .env.example
+├── .gitignore
+├── package.json
+├── tsconfig.json
+└── src/
+    ├── index.ts
+    ├── config/
+    │   └── env.ts
+    ├── controllers/
+    │   └── upload.controller.ts
+    ├── lib/
+    │   └── cloudinary.ts
+    ├── middleware/
+    │   ├── auth.ts
+    │   ├── errorHandler.ts
+    │   └── rateLimiter.ts
+    ├── routes/
+    │   └── upload.route.ts
+    └── schemas/
+        └── upload.schema.ts
+```
+
+---
+
 ## ⚙️ Environment Setup
 
 Create a `.env` file in the project root:
@@ -29,7 +56,6 @@ JWT_SECRET=your_super_secret_access_token_key_at_least_32_chars
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-```
 
 🚀 Running the Microservice
 1. Install Dependencies
