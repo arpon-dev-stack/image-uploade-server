@@ -20,8 +20,8 @@ media-service/
 ├── .gitignore
 ├── package.json
 ├── tsconfig.json
+├── index.ts
 └── src/
-    ├── index.ts
     ├── config/
     │   └── env.ts
     ├── controllers/
